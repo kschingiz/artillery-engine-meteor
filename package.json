@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "keywords": [
+    "load testing",
+    "meteorjs",
+    "meteor",
+    "artillery"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
