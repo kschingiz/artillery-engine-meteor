@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kengessov Shynggys",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kschingiz/artillery-engine-meteor"
+  },
   "dependencies": {
     "artillery": "^1.6.0-29",
     "async": "^3.1.1",

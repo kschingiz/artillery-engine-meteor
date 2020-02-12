@@ -1,21 +1,21 @@
 config:
-  target: "ws://localhost:3000/websocket"
+  target: "ws://localhost:3000/websocket" # your app url
   phases:
     - duration: 60
       arrivalRate: 20
   engines:
-    meteor: {}
+    meteor: {} # include meteor engine
 scenarios:
-  - engine: "meteor"
-    flow:
-      - login:
+  - engine: "meteor" # meteor scenario
+    flow: # scenario flow
+      - login: # login first
           username: USERNAME
           password: PASSWORD
-      - call:
+      - call: # then Meteor.call
           name: "method name"
-          payload:
+          payload: # make sure payload is Array type
             - _id: "Payload"
-      - subscribe:
+      - subscribe: # subscribe to publication
           name: "pub name"
-          payload:
+          payload: # make sure payload is Array type
             - "Payload"
